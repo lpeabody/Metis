@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+fin project rm -f
+fin project start
+
+fin exec composer install --no-interaction
+fin exec /var/www/vendor/bin/blt blt:init:shell-alias --no-interaction
+fin exec blt setup --no-interaction

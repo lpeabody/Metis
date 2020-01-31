@@ -1,0 +1,14 @@
+project:
+  profile:
+    name: metis
+  local:
+    hostname: metis.docksal
+drush:
+  aliases:
+    local: docksal.default
+drupal:
+  db:
+    database: default
+    username: user
+    password: user
+    host: db

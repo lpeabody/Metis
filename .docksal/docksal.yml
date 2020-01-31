@@ -1,0 +1,5 @@
+version: "2.1"
+
+services:
+  cli:
+    image: wearegenuine/docksal-cli:gen1.1.0-cli2.10-php7.3

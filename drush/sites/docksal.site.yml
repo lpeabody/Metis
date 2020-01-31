@@ -1,0 +1,3 @@
+default:
+  uri: http://${env.VIRTUAL_HOST}
+  root: /var/www/docroot
