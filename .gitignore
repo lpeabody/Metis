@@ -11,6 +11,9 @@ local.blt.yml
 # Ignore drupal core.
 docroot/core
 
+# Ignore robots.txt (handled by robotstxt module).
+docroot/robots.txt
+
 # Ignore paths that contain user-generated content.
 docroot/sites/*/files
 /files-private
