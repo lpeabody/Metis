@@ -10,8 +10,9 @@
 
 use Composer\Autoload\ClassLoader;
 use Acquia\Blt\Robo\Common\EnvironmentDetector;
+use Drupal\Core\Installer\InstallerKernel;
 
-if (EnvironmentDetector::isLocalEnv() && getenv('DOCKSAL')) {
+if (EnvironmentDetector::isLocalEnv() && getenv('DOCKSAL') && !InstallerKernel::installationAttempted()) {
   // Check for PHP Memcached libraries.
   $memcache_exists = class_exists('Memcache', FALSE);
   $memcached_exists = class_exists('Memcached', FALSE);

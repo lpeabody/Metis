@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+## Execute drush uli with specific alias.
+
+open $(fin drush $1 uli | tr -d '\r')

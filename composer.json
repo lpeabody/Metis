@@ -17,6 +17,7 @@
         "drupal/config_filter": "^2.0",
         "drupal/config_split": "^1.0.0",
         "drupal/core-recommended": "^8.8.0",
+        "drupal/facets": "^1.4",
         "drupal/features": "^3.8.0",
         "drupal/paragraphs": "^1.10",
         "drupal/pathauto": "^1.6",
