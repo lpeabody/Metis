@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+fin config set XDEBUG_ENABLED=1 --env=local
+fin up

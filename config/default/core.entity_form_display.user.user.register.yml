@@ -1,31 +1,29 @@
-uuid: 2ed4e4a8-bfc1-4d45-87d9-38bcbef73fd1
+uuid: 6222f855-d888-436d-913e-e2b04d980e97
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.user.register
     - field.field.user.user.tmgmt_translation_skills
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - image
     - path
     - tmgmt_language_combination
     - user
-_core:
-  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
-id: user.user.default
+id: user.user.register
 targetEntityType: user
 bundle: user
-mode: default
+mode: register
 content:
   account:
     weight: -10
-    region: content
-  contact:
-    weight: 5
+    settings: {  }
+    third_party_settings: {  }
     region: content
   language:
     weight: 0
+    settings: {  }
+    third_party_settings: {  }
     region: content
   path:
     type: path
@@ -35,6 +33,8 @@ content:
     third_party_settings: {  }
   timezone:
     weight: 6
+    settings: {  }
+    third_party_settings: {  }
     region: content
   tmgmt_translation_skills:
     type: tmgmt_language_combination_default
@@ -42,13 +42,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  user_picture:
-    type: image_image
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    weight: -1
-    region: content
 hidden:
   langcode: true
+  user_picture: true
