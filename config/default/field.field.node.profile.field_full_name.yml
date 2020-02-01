@@ -1,0 +1,21 @@
+uuid: 2549583f-fc1c-4f3b-9a0e-7eae28dff43e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full_name
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_full_name
+field_name: field_full_name
+entity_type: node
+bundle: profile
+label: 'Full Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,21 @@
+uuid: b1371e7a-6ed5-4e84-985e-a7e7eb18b519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_name
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_first_name
+field_name: field_first_name
+entity_type: node
+bundle: profile
+label: 'First Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

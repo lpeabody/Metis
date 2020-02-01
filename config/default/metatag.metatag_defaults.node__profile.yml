@@ -1,0 +1,9 @@
+uuid: 60a0e3f4-3460-487a-b905-38cecbb920d5
+langcode: en
+status: true
+dependencies: {  }
+id: node__profile
+label: 'Content: Profile'
+tags:
+  schema_person_type: Person
+  schema_person_name: '[node:field_display_name]'

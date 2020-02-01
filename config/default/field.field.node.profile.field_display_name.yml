@@ -1,0 +1,21 @@
+uuid: e13ec59e-4eb6-4875-9e43-f9c0d9f0da65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_name
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_display_name
+field_name: field_display_name
+entity_type: node
+bundle: profile
+label: 'Display Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
