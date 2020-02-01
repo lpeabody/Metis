@@ -14,7 +14,8 @@
         "drupal/acquia_purge": "^1.0-beta3",
         "drupal/admin_toolbar": "^2.0",
         "drupal/cog": "^1.0.0",
-        "drupal/config_filter": "^2.0",
+        "drupal/config_filter": "^1.0",
+        "drupal/config_ignore": "^2.2",
         "drupal/config_split": "^1.0.0",
         "drupal/core-recommended": "^8.8.0",
         "drupal/facets": "^1.4",
@@ -27,7 +28,8 @@
         "drupal/seckit": "^1.0.0-alpha2",
         "drupal/shield": "^1.2.0",
         "drupal/simple_sitemap": "^3.5",
-        "drupal/tmgmt": "^1.10"
+        "drupal/tmgmt": "^1.10",
+        "drupal/varnish_purger": "^1.11"
     },
     "require-dev": {
         "acquia/blt-require-dev": "11.x-dev",

@@ -1,0 +1,13 @@
+blacklist:
+  - 4xx-response
+  - theme_registry
+  - route_match
+  - routes
+  - node_list
+  - paragraph_list
+  - media_list
+  - file_list
+  - tmgmt_job_item_list
+  - tmgmt_job_list
+_core:
+  default_config_hash: LNM6W4jzX5aRPKL0VFHMDznKihCuefP3a5K0Z2428b8

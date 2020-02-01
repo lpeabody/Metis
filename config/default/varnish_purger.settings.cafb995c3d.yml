@@ -1,0 +1,25 @@
+uuid: f60d55a2-5859-4d76-9a02-3c79a5dab77c
+langcode: en
+status: true
+dependencies: {  }
+id: cafb995c3d
+name: 'Local Site Ban'
+invalidationtype: everything
+hostname: varnish.metis.docksal
+port: 80
+path: /site
+request_method: BAN
+scheme: http
+verify: '1'
+headers:
+  -
+    field: X-Acquia-Purge
+    value: metis
+body: null
+body_content_type: null
+runtime_measurement: true
+timeout: !!float 1
+connect_timeout: !!float 1
+cooldown_time: !!float 0
+max_requests: 100
+http_errors: true

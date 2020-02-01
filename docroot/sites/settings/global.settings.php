@@ -19,6 +19,7 @@
  */
 $additionalSettingsFiles = [
   DRUPAL_ROOT . "/sites/settings/docksal-memcache.settings.php",
+  DRUPAL_ROOT . "/sites/settings/varnish.settings.php",
   // e.g,( DRUPAL_ROOT . "/sites/settings/foo.settings.php" )
 ];
 

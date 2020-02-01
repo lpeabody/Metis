@@ -1,0 +1,29 @@
+channels:
+  -
+    id: purgers
+    grants:
+      - 0
+      - 2
+      - 3
+  -
+    id: queue
+    grants:
+      - 0
+      - 2
+      - 3
+  -
+    id: diagnostics
+    grants:
+      - 3
+  -
+    id: purger_varnish_63375491ff
+    grants:
+      - 0
+      - 2
+      - 3
+  -
+    id: purger_varnish_cafb995c3d
+    grants:
+      - 0
+      - 2
+      - 3
