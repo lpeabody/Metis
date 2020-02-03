@@ -52,3 +52,23 @@ disable-targets:
 tests:
   chrome:
     args: '--no-sandbox'
+# These are the default entity types that should be exported in their entirety
+# when the refresh default content command runs.
+default-content:
+  default-entities:
+    - node
+    - block_content
+    - menu_link_content
+    - media
+    - file
+    - taxonomy_term
+    - user
+  # Use preserve keyword to keep authors as they are in the system during
+  # export. Optionally, set value to the uid of the author who would be
+  # assigned to all content during export. Recommended best practice is to
+  # create a fresh administrative user and add that user's uid here or in
+  # the appropriate site blt.yml file (preferably the latter).
+  default_author: preserve
+  # This should always be true. Added for flexibility if Default Content
+  # becomes more flexible down the line.
+  scrub_system_users: true

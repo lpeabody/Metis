@@ -132,7 +132,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Example\\": "blt/src/"
+            "ProjectBlt\\": "blt/src/"
         }
     },
     "autoload-dev": {
