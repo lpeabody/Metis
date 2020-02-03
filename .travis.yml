@@ -1,0 +1,44 @@
+sudo: required
+language: generic
+dist: xenial
+
+stages:
+  - test
+#  - name: deploy
+#    if: ((branch = master OR branch = develop) AND tag IS blank AND type != pull_request) OR (commit_message =~ /\[deploy\]/ AND type != pull_request)
+
+env:
+  global:
+    - COMPOSER_BIN=$TRAVIS_BUILD_DIR/vendor/bin
+    - BLT_DIR=$TRAVIS_BUILD_DIR/vendor/acquia/blt
+    - BUILD_DIR=$TRAVIS_BUILD_DIR
+    - DOCKSAL_DIR=$TRAVIS_BUILD_DIR/.docksal
+    - SECRET_BLT_ENVIRONMENT='local'
+
+services:
+  - docker
+
+install:
+  - bash <(curl -fsSL https://get.docksal.io)
+  - fin version
+  - fin sysinfo
+
+before_script:
+  - travis_retry fin init
+
+script:
+  - fin tests
+
+#jobs:
+#  include:
+#    - name: "Lightning Tests"
+#      env: BUILD_SITE=default
+#    - stage: deploy
+#      before_script: skip
+#      script: skip
+#      deploy:
+#        - provider: script
+#          script: "${DOCKSAL_DIR}/scripts/travis/deploy_branch"
+#          skip_cleanup: true
+#          on:
+#            all_branches: true

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+## Run tests.
+##
+## Usage: fin tests [site1]
+
+set -e
+
+BLT_ENVIRONMENT=${SECRET_BLT_ENVIRONMENT:-local}
+echo "Testing in BLT environment $BLT_ENVIRONMENT."
+
+fin exec /var/www/vendor/bin/blt validate
