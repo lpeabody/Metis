@@ -2,8 +2,8 @@ sudo: required
 language: generic
 dist: xenial
 
-stages:
-  - test
+#stages:
+#  - test
 #  - name: deploy
 #    if: ((branch = master OR branch = develop) AND tag IS blank AND type != pull_request) OR (commit_message =~ /\[deploy\]/ AND type != pull_request)
 
