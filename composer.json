@@ -79,7 +79,8 @@
                     "mode": "replace",
                     "path": "docroot/core/assets/scaffold/files/default.settings.php",
                     "overwrite": false
-                }
+                },
+                "[web-root]/robots.txt": false
             }
         },
         "enable-patching": true,
