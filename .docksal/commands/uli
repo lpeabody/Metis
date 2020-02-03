@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
 ## Execute drush uli with specific alias.
+DRUSH_ALIAS=${1:-@self}
 
-open $(fin drush $1 uli | tr -d '\r')
+open $(fin drush $DRUSH_ALIAS uli | tr -d '\r')
