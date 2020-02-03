@@ -47,3 +47,8 @@ disable-targets:
   drupal:
     toggle:
       modules: true
+
+# Behat
+tests:
+  chrome:
+    args: '--no-sandbox'

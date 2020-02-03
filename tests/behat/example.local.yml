@@ -9,7 +9,7 @@ local:
       paths:
         # Set features to repo root so that .feature files belonging to contrib
         # modules, themes, and profiles can be discovered.
-        features: ${repo.root}
+        features: ${repo.root}/tests/behat/features
       contexts:
         - Drupal\FeatureContext:
           parameters:

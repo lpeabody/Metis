@@ -10,3 +10,4 @@ BLT_ENVIRONMENT=${SECRET_BLT_ENVIRONMENT:-local}
 echo "Testing in BLT environment $BLT_ENVIRONMENT."
 
 fin exec /var/www/vendor/bin/blt validate --no-interaction
+fin exec /var/www/vendor/bin/blt tests --no-interaction
