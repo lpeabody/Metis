@@ -44,3 +44,6 @@ disable-targets:
   blt:
     init:
       git-hooks: true
+  drupal:
+    toggle:
+      modules: true

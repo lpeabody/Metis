@@ -37,3 +37,4 @@ hidden:
   field_full_name: true
   field_last_name: true
   langcode: true
+  search_api_excerpt: true

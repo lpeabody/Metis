@@ -24,7 +24,7 @@ install:
   - fin sysinfo
 
 before_script:
-  - travis_retry fin init
+  - fin init
 
 script:
   - fin tests
