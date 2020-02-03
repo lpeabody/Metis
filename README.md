@@ -1,5 +1,7 @@
 # My Project
 
+[![Build Status](https://travis-ci.com/lpeabody/Metis.svg?branch=master)](https://travis-ci.com/lpeabody/Metis)
+
 A brief description of My Project.
 
 ## Using This Template
