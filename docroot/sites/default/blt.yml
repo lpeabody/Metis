@@ -13,4 +13,4 @@ drupal:
     password: user
     host: db
 default-content:
-  path: ${repo.root}/docroot/profiles/custom/metis/modules/metis_default_content/content
+  path: ${repo.root}/docroot/profiles/custom/metis/modules/metis_default_content

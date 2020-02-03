@@ -25,7 +25,7 @@ class DefaultContentCommand extends BltTasks {
         ->stopOnFail()
         ->drush('cache-rebuild')
         ->drush('pm-enable')->arg($default_content_module)
-        ->drush('pm-uninstall')->args('default_content')
+        ->drush('pm-uninstall')->args($default_content_module)
         ->drush('cache-rebuild');
       $result = $task->run();
       if (!$result->wasSuccessful()) {
