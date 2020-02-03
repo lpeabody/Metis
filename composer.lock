@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2fd7b7a32df9dfb54b818424c2d83a9a",
+    "content-hash": "4c64a8aa7c6ee78dbf70ef4e0cfe22c2",
     "packages": [
         {
             "name": "acquia/blt",
@@ -3773,6 +3773,64 @@
             "homepage": "https://www.drupal.org/project/contact_storage",
             "support": {
                 "source": "https://git.drupalcode.org/project/contact_storage"
+            }
+        },
+        {
+            "name": "drupal/cookieconsent",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cookieconsent.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cookieconsent-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "4b4d551d80fe133ab5df3d75f1e34f85c58dbed2"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1530539621",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Hans van Wezenbeek (Nitebreed)",
+                    "homepage": "https://www.drupal.org/u/nitebreed",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "pjotr",
+                    "homepage": "https://www.drupal.org/user/3487709"
+                }
+            ],
+            "description": "CookieConsent uses the Cookie Consent javascript library for alerting users about the use of cookies on your website",
+            "homepage": "https://www.drupal.org/project/cookieconsent",
+            "keywords": [
+                "Cookie",
+                "CookieConsent",
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/cookieconsent",
+                "issues": "http://drupal.org/project/issues/cookieconsent"
             }
         },
         {
