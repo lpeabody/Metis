@@ -32,6 +32,7 @@
         "drupal/shield": "^1.2.0",
         "drupal/simple_sitemap": "^3.5",
         "drupal/tmgmt": "^1.10",
+        "drupal/twig_tweak": "^2.4",
         "drupal/varnish_purger": "^1.11"
     },
     "require-dev": {
