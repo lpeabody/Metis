@@ -2,26 +2,35 @@
 
 [![Build Status](https://travis-ci.com/lpeabody/Metis.svg?branch=master)](https://travis-ci.com/lpeabody/Metis)
 
-[Metis](https://en.wikipedia.org/wiki/Metis_%28mythology%29) is a starter Drupal project meant to speed up time-to-delivery by removing a lot of repetitive work that gets done
-time and time again. It is meant to provide best-practice configurations and sample content that show cases site
-features such as:
+[Metis](https://en.wikipedia.org/wiki/Metis_%28mythology%29) is a starter Drupal project meant to speed up
+time-to-delivery by removing a lot of repetitive work that gets done time and time again. It is meant to provide
+best-practice configurations and sample content that showcases site features such as:
 
 - Content Authoring
     - Layout Builder
     - Media
     - Media Library
+- Translations
+    - Content Translation
+    - Configuration Translation
+    - UI Translation
+    - [Translation Management Tool](https://www.drupal.org/project/tmgmt)
+        - Group translatable items into jobs and submit them to third parties for translation.
 - Site Search
-    - Search API Solr
-    - Faceted Search
+    - [Search API Solr](https://www.drupal.org/project/search_api_solr)
+    - [Faceted Search](https://www.drupal.org/project/facets)
 - SEO
-    - Schema.org JSON-LD
-    - OG Metatags
-    - Sitemap XML
-    - Robots.txt
+    - [Schema.org JSON-LD](https://www.drupal.org/project/schema_metatag)
+    - Metatags
+        - Open Graph
+        - Twitter Cards
+    - [Sitemap XML](https://www.drupal.org/project/simple_sitemap)
+    - [Robots.txt](https://www.drupal.org/project/robotstxt)
 - Caching
-    - Varnish Purging
+    - [Varnish Purging](https://www.drupal.org/project/varnish_purge)
 - REST API
     - JSON:API endpoints for all content types
+- Installation from configuration
 
 This project is optimized for running in a [Docksal](https://docksal.io/) environment. All project-related instructions
 assume you are running a local Docksal environment. This does not preclude the possibility of adding support for
