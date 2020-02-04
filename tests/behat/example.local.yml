@@ -11,6 +11,7 @@ local:
         # modules, themes, and profiles can be discovered.
         features: ${repo.root}/tests/behat/features
       contexts:
+        - Drupal\SchemaContext
         - Drupal\FeatureContext:
           parameters:
             environment:
