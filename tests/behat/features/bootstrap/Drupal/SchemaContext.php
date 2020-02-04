@@ -10,6 +10,8 @@ use ML\JsonLD\JsonLD;
  */
 class SchemaContext extends RawDrupalContext {
 
+  protected const MISSING_JSONLD_MESSAGE = 'There is no JSON-LD object loaded on the page.';
+
   /**
    * The last referenced schema type on the page.
    *
@@ -43,6 +45,9 @@ class SchemaContext extends RawDrupalContext {
         throw new \Exception('Schema type of "' . $schema_type . '" not found on page.');
       }
     }
+    else {
+      throw new \Exception(self::MISSING_JSONLD_MESSAGE);
+    }
   }
 
   /**
@@ -66,10 +71,12 @@ class SchemaContext extends RawDrupalContext {
           if ($target_value == $value) {
             return;
           }
+          throw new \Exception("Property '$property' was found, but had value '$target_value' instead of '$value'.");
         }
       }
+      throw new \Exception("Property '$property' was not found in the JSON-LD page object.");
     }
-    throw new \Exception();
+    throw new \Exception(self::MISSING_JSONLD_MESSAGE);
   }
 
 }

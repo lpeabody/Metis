@@ -1,0 +1,28 @@
+uuid: 3985bdd0-a0bd-4bf1-9cd7-33915d40973e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_first_name
+    - node.type.profile
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+id: node.profile.field_profile_first_name
+field_name: field_profile_first_name
+entity_type: node
+bundle: profile
+label: 'First Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

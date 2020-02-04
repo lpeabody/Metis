@@ -1,0 +1,30 @@
+uuid: 06372803-2181-4c57-b61f-77bbe5bd9aec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_personal_bio
+    - node.type.profile
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: node.profile.field_profile_personal_bio
+field_name: field_profile_personal_bio
+entity_type: node
+bundle: profile
+label: 'Personal Bio'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,28 @@
+uuid: 05a98de6-a0ad-4ea0-b660-b28af107a1da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_email
+    - node.type.profile
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+id: node.profile.field_profile_email
+field_name: field_profile_email
+entity_type: node
+bundle: profile
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,28 @@
+uuid: bf83f14d-4c3e-419d-927c-40bae5e70537
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_display_name
+    - node.type.profile
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+id: node.profile.field_profile_display_name
+field_name: field_profile_display_name
+entity_type: node
+bundle: profile
+label: 'Display Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

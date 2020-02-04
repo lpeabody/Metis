@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.profile.body
-    - field.field.node.profile.field_display_name
-    - field.field.node.profile.field_first_name
-    - field.field.node.profile.field_full_name
-    - field.field.node.profile.field_last_name
+    - field.field.node.profile.field_profile_display_name
+    - field.field.node.profile.field_profile_email
+    - field.field.node.profile.field_profile_first_name
+    - field.field.node.profile.field_profile_full_name
+    - field.field.node.profile.field_profile_job_title
+    - field.field.node.profile.field_profile_last_name
+    - field.field.node.profile.field_profile_personal_bio
     - node.type.profile
   module:
     - text
@@ -17,46 +19,60 @@ targetEntityType: node
 bundle: profile
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_display_name:
-    weight: 105
+  field_profile_display_name:
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_first_name:
-    weight: 102
+  field_profile_email:
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_full_name:
-    weight: 104
+  field_profile_first_name:
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_last_name:
-    weight: 103
+  field_profile_full_name:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_profile_job_title:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_profile_last_name:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_profile_personal_bio:
+    weight: 7
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true
   search_api_excerpt: true

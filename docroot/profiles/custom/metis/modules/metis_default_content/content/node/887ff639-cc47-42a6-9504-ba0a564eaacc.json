@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 4
+            "value": 5
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-02-03T22:08:19+00:00",
+            "value": "2020-02-04T15:47:08+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "9929d310-1943-4bb2-8451-67cbe7d771ef"
+                        "value": "a5baa4bf-5b0e-4cc0-9a2e-23cf7dff228d"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "9929d310-1943-4bb2-8451-67cbe7d771ef"
+                        "value": "a5baa4bf-5b0e-4cc0-9a2e-23cf7dff228d"
                     }
                 ],
                 "lang": "en"
@@ -108,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2020-02-03T22:08:19+00:00",
+            "value": "2020-02-04T15:47:08+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -143,15 +143,14 @@
                 "schema_person_type": "Person",
                 "schema_person_name": "Test Person",
                 "title": "Test Person Profile | BLTed 11",
-                "canonical_url": "http:\/\/metis.docksal\/test-person-profile",
-                "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
+                "canonical_url": "http:\/\/metis.docksal\/test-person-profile"
             }
         }
     ],
     "path": [
         {
             "alias": "\/test-person-profile",
-            "pid": 10,
+            "pid": 9,
             "langcode": "en",
             "lang": "en"
         }
@@ -168,44 +167,55 @@
             "lang": "en"
         }
     ],
-    "body": [
-        {
-            "value": "<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<\/p>\r\n",
-            "format": "basic_html",
-            "processed": "<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<\/p>",
-            "summary": "",
-            "lang": "en"
-        }
-    ],
-    "field_display_name": [
+    "field_profile_display_name": [
         {
             "value": "Test Person",
-            "format": "basic_html",
-            "processed": "Test Person",
-            "lang": "en"
+            "format": "plain_text",
+            "processed": "<p>Test Person<\/p>\n"
         }
     ],
-    "field_first_name": [
+    "field_profile_email": [
+        {
+            "value": "test.person@example.com",
+            "format": "plain_text",
+            "processed": "<p><a href=\"mailto:test.person@example.com\">test.person@example.com<\/a><\/p>\n"
+        }
+    ],
+    "field_profile_first_name": [
         {
             "value": "Test",
-            "format": "basic_html",
-            "processed": "Test",
-            "lang": "en"
+            "format": "plain_text",
+            "processed": "<p>Test<\/p>\n"
         }
     ],
-    "field_full_name": [
+    "field_profile_full_name": [
         {
             "value": "Test Person",
-            "format": "basic_html",
-            "processed": "Test Person",
+            "format": "plain_text",
+            "processed": "<p>Test Person<\/p>\n"
+        }
+    ],
+    "field_profile_job_title": [
+        {
+            "value": "Example Person",
+            "format": "plain_text",
+            "processed": "<p>Example Person<\/p>\n",
             "lang": "en"
         }
     ],
-    "field_last_name": [
+    "field_profile_last_name": [
         {
             "value": "Person",
+            "format": "plain_text",
+            "processed": "<p>Person<\/p>\n"
+        }
+    ],
+    "field_profile_personal_bio": [
+        {
+            "value": "<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\r\n\r\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<\/p>\r\n\r\n<p>Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>\r\n",
             "format": "basic_html",
-            "processed": "Person",
+            "processed": "<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\n\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<\/p>\n\n<p>Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>",
+            "summary": "",
             "lang": "en"
         }
     ]
