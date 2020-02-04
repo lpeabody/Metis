@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 5
+            "value": 6
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-02-04T15:47:08+00:00",
+            "value": "2020-02-04T15:51:19+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -108,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2020-02-04T15:47:08+00:00",
+            "value": "2020-02-04T15:51:19+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -143,6 +143,8 @@
                 "schema_person_type": "Person",
                 "schema_person_name": "Test Person",
                 "title": "Test Person Profile | BLTed 11",
+                "schema_person_job_title": "Example Person",
+                "schema_person_email": "test.person@example.com",
                 "canonical_url": "http:\/\/metis.docksal\/test-person-profile"
             }
         }
@@ -176,9 +178,7 @@
     ],
     "field_profile_email": [
         {
-            "value": "test.person@example.com",
-            "format": "plain_text",
-            "processed": "<p><a href=\"mailto:test.person@example.com\">test.person@example.com<\/a><\/p>\n"
+            "value": "test.person@example.com"
         }
     ],
     "field_profile_first_name": [

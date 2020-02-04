@@ -6,4 +6,6 @@ id: node__profile
 label: 'Content: Profile'
 tags:
   schema_person_type: Person
-  schema_person_name: '[node:field_display_name]'
+  schema_person_email: '[node:field_profile_email]'
+  schema_person_name: '[node:field_profile_display_name]'
+  schema_person_job_title: '[node:field_profile_job_title]'

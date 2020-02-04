@@ -1,17 +1,15 @@
-uuid: b05bb04b-6b25-4cc7-aab0-4b8082a597d4
+uuid: 7ed42c91-9def-4a9a-9919-98b73b58c3e9
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_profile_email
 field_name: field_profile_email
 entity_type: node
-type: text
-settings:
-  max_length: 255
-module: text
+type: email
+settings: {  }
+module: core
 locked: false
 cardinality: 1
 translatable: true

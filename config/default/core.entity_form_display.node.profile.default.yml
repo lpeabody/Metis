@@ -36,8 +36,8 @@ third_party_settings:
       label: 'Name & Display'
     group_workplace_details:
       children:
-        - field_profile_job_title
         - field_profile_email
+        - field_profile_job_title
         - field_profile_personal_bio
       parent_name: ''
       weight: 3
@@ -70,12 +70,12 @@ content:
     type: text_textfield
     region: content
   field_profile_email:
-    weight: 13
+    weight: 26
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: email_default
     region: content
   field_profile_first_name:
     weight: 13
@@ -94,7 +94,7 @@ content:
     type: text_textfield
     region: content
   field_profile_job_title:
-    weight: 12
+    weight: 27
     settings:
       size: 60
       placeholder: ''
@@ -110,7 +110,7 @@ content:
     type: text_textfield
     region: content
   field_profile_personal_bio:
-    weight: 14
+    weight: 28
     settings:
       rows: 9
       summary_rows: 3
