@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.body
     - node.type.article
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
 _core:
   default_config_hash: IjZnOLWk1Pjq3WRg2pLSA1ERh7Po7izCq_p6UztZr2c
 id: node.article.body
