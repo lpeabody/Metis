@@ -8,8 +8,10 @@ best-practice configurations and sample content that showcases site features suc
 
 - Content Authoring
     - Layout Builder
-    - Media
     - Media Library
+- Images
+    - [ImageMagick](https://www.drupal.org/project/imagemagick)
+    - [Focal Point](https://www.drupal.org/project/focal_point)
 - Translations
     - Content Translation
     - Configuration Translation
@@ -21,7 +23,7 @@ best-practice configurations and sample content that showcases site features suc
     - [Faceted Search](https://www.drupal.org/project/facets)
 - SEO
     - [Schema.org JSON-LD](https://www.drupal.org/project/schema_metatag)
-    - Metatags
+    - [Metatag](https://www.drupal.org/project/metatag)
         - Open Graph
         - Twitter Cards
     - [Sitemap XML](https://www.drupal.org/project/simple_sitemap)
@@ -30,7 +32,10 @@ best-practice configurations and sample content that showcases site features suc
     - [Varnish Purging](https://www.drupal.org/project/varnish_purge)
 - REST API
     - JSON:API endpoints for all content types
-- Installation from configuration
+- Configuration
+    - Installation from configuration via profile
+    - [Configuration Split](https://www.drupal.org/project/config_split)
+    - [Config Ignore](https://www.drupal.org/project/config_ignore)
 
 This project is optimized for running in a [Docksal](https://docksal.io/) environment. All project-related instructions
 assume you are running a local Docksal environment. This does not preclude the possibility of adding support for
