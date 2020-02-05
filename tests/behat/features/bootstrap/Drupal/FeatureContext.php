@@ -2,6 +2,7 @@
 
 namespace Drupal;
 
+use Behat\Mink\Exception\UnsupportedDriverActionException;
 use Drupal\DrupalExtension\Context\RawDrupalContext;
 
 /**
@@ -34,7 +35,12 @@ class FeatureContext extends RawDrupalContext {
    * @BeforeScenario
    */
   public function resizeWindow() {
-    $this->getSession()->resizeWindow(1440, 900, 'current');
+    try {
+      $this->getSession()->resizeWindow(1440, 900, 'current');
+    }
+    catch (UnsupportedDriverActionException $e) {
+      // Deal with it I guess.
+    }
   }
 
   /**
