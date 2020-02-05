@@ -1,0 +1,9 @@
+tips:
+  search-api-index-index-status:
+    label: 'Estado del índice'
+  search-api-index-status:
+    label: Estado
+  search-api-index-tracker:
+    label: Rastreador
+  search-api-index-server:
+    label: Servidor

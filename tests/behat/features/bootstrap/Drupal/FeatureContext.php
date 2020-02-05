@@ -9,6 +9,15 @@ use Drupal\DrupalExtension\Context\RawDrupalContext;
  */
 class FeatureContext extends RawDrupalContext {
 
+  use SpinTrait;
+
+  /**
+   * The number of screenshots taken so far.
+   *
+   * @var int
+   */
+  protected $screenshotCount;
+
   /**
    * Every scenario gets its own context instance.
    *
@@ -16,7 +25,25 @@ class FeatureContext extends RawDrupalContext {
    * context constructor through behat.yml.
    */
   public function __construct() {
+    $this->screenshotCount = 0;
+  }
 
+  /**
+   * Takes a screenshot.
+   *
+   * @param string $filename
+   *   (optional) Ignored. The filename is based on a counter and prefixed with
+   *   the name of the Mink browser.
+   * @param mixed $filepath
+   *   (optional) Ignored. The screenshot is saved in the directory above the
+   *   Drupal root.
+   *
+   * @When I take a screenshot
+   */
+  public function saveScreenshot($filename = NULL, $filepath = NULL) {
+    $filename = sprintf('%s_%d.png', $this->getMinkParameter('browser_name'), ++$this->screenshotCount);
+    $filepath = \Drupal::root() . '/../';
+    parent::saveScreenshot($filename, $filepath);
   }
 
 }
