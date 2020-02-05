@@ -77,16 +77,19 @@ class WebformContext extends RawDrupalContext {
     $this->visitPath('/admin/structure/webform');
     $this->assertSession()->statusCodeEquals(200);
     $this->getSession()->getPage()->clickLink('Add webform');
-    $this->spin(function (WebformContext $context) {
+    $this->spin(function () {
       $this->assertSession()->fieldExists('Title');
     }, 5);
     $this->getSession()->getPage()->fillField('Title', $title);
-    $has_machine_name = $this->spin(function (WebformContext $context) use ($machine_name) {
+    $has_machine_name = $this->spin(function () use ($machine_name) {
       $this->assertSession()->pageTextContains($machine_name);
       return TRUE;
     }, 5);
     if ($has_machine_name) {
       $this->getSession()->getPage()->pressButton('Save');
+      $this->spin(function () use ($title) {
+        $this->assertSession()->pageTextContains("Webform $title created.");
+      }, 5);
       $this->webformEntitiesCreated[$machine_name] = $title;
       $this->mostRecentWebform = [
         'title' => $title,

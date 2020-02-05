@@ -29,6 +29,15 @@ class FeatureContext extends RawDrupalContext {
   }
 
   /**
+   * Resize the window to more sensible default.
+   *
+   * @BeforeScenario
+   */
+  public function resizeWindow() {
+    $this->getSession()->resizeWindow(1440, 900, 'current');
+  }
+
+  /**
    * Takes a screenshot.
    *
    * @param string $filename

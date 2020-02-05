@@ -31,7 +31,7 @@ best-practice configurations, robust testing of all features, and sample content
 - Caching
     - [Varnish Purging](https://www.drupal.org/project/varnish_purge)
 - REST API
-    - JSON:API endpoints for all content types
+    - JSON:API endpoints for all entity types and bundles
 - Configuration
     - Installation from configuration via profile
     - [Configuration Split](https://www.drupal.org/project/config_split)

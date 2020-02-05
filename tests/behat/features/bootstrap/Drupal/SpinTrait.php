@@ -24,7 +24,7 @@ trait SpinTrait {
   protected function spin(callable $lambda, $tries = 60) {
     for ($i = 0; $i < $tries; $i++) {
       try {
-        if ($lambda($this)) {
+        if ($lambda()) {
           return TRUE;
         }
       }
