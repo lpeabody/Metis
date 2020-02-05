@@ -4,7 +4,7 @@
 
 [Metis](https://en.wikipedia.org/wiki/Metis_%28mythology%29) is a starter Drupal project meant to speed up
 time-to-delivery by removing a lot of repetitive work that gets done time and time again. It is meant to provide
-best-practice configurations and sample content that showcases site features such as:
+best-practice configurations, robust testing of all features, and sample content that showcases site features such as:
 
 - Content Authoring
     - Layout Builder
