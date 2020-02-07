@@ -85,6 +85,7 @@ This project is based on BLT, an open-source project template and tool that enab
 1. Clone the project.
 2. Run `fin init`.
 3. Run `fin uli` to generate a login link and automatically open it in your default browser.
+4. Open http://docs.metis.docksal/ to view the local documentation.
 
 ---
 

@@ -16,6 +16,11 @@
                 "href": "http:\/\/metis.docksal\/user\/1?_format=hal_json",
                 "lang": "en"
             }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_type": [
+            {
+                "href": "http:\/\/metis.docksal\/taxonomy\/term\/2?_format=hal_json"
+            }
         ]
     },
     "nid": [
@@ -30,7 +35,7 @@
     ],
     "vid": [
         {
-            "value": 7
+            "value": 8
         }
     ],
     "langcode": [
@@ -46,7 +51,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-02-04T19:59:34+00:00",
+            "value": "2020-02-07T18:24:36+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -63,7 +68,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "a5baa4bf-5b0e-4cc0-9a2e-23cf7dff228d"
+                        "value": "e1e78591-354a-4a98-82cd-b05639d1b13e"
                     }
                 ]
             }
@@ -80,10 +85,27 @@
                 },
                 "uuid": [
                     {
-                        "value": "a5baa4bf-5b0e-4cc0-9a2e-23cf7dff228d"
+                        "value": "e1e78591-354a-4a98-82cd-b05639d1b13e"
                     }
                 ],
                 "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_type": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/metis.docksal\/taxonomy\/term\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "63f86945-2bb1-49e5-aa8b-da42bafdec59"
+                    }
+                ]
             }
         ]
     },
@@ -108,7 +130,7 @@
     ],
     "changed": [
         {
-            "value": "2020-02-04T19:59:34+00:00",
+            "value": "2020-02-07T18:24:36+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -170,7 +192,7 @@
         {
             "value": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<\/p>\r\n\r\n<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"ae219b27-cd35-45ea-bc84-0daf0627a26d\"><\/drupal-media>\r\n\r\n<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat.<\/p>\r\n\r\n<p>Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<\/p>\r\n",
             "format": "basic_html",
-            "processed": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<\/p>\n\n\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'media' -->\n<!-- FILE NAME SUGGESTIONS:\n   * media--source-image.html.twig\n   * media--image--default.html.twig\n   * media--image.html.twig\n   * media--default.html.twig\n   x media.html.twig\n-->\n<!-- BEGIN OUTPUT from 'core\/themes\/classy\/templates\/content\/media.html.twig' -->\n<article class=\"align-center media media--type-image media--view-mode-default\"><!-- THEME DEBUG --><!-- THEME HOOK: 'field' --><!-- FILE NAME SUGGESTIONS:\n   * field--media--field-media-image--image.html.twig\n   * field--media--field-media-image.html.twig\n   * field--media--image.html.twig\n   * field--field-media-image.html.twig\n   * field--image.html.twig\n   x field.html.twig\n--><!-- BEGIN OUTPUT from 'core\/themes\/classy\/templates\/field\/field.html.twig' --><div data-quickedit-field-id=\"media\/1\/field_media_image\/en\/default\" class=\"field field--name-field-media-image field--type-image field--label-visually_hidden\">\n    <div class=\"field__label visually-hidden\">Image<\/div>\n              <div class=\"field__item\">\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image_formatter' -->\n<!-- BEGIN OUTPUT from 'core\/themes\/classy\/templates\/field\/image-formatter.html.twig' -->\n  \n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image_style' -->\n<!-- BEGIN OUTPUT from 'core\/themes\/classy\/templates\/field\/image-style.html.twig' -->\n\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image' -->\n<!-- BEGIN OUTPUT from 'core\/themes\/classy\/templates\/field\/image.html.twig' -->\n<img src=\"\/sites\/default\/files\/styles\/large\/public\/2020-02\/800x450coral.png?itok=B-_8hbQm\" width=\"480\" height=\"270\" alt=\"mmm coral\" class=\"image-style-large\" \/><!-- END OUTPUT from 'core\/themes\/classy\/templates\/field\/image.html.twig' --><!-- END OUTPUT from 'core\/themes\/classy\/templates\/field\/image-style.html.twig' --><!-- END OUTPUT from 'core\/themes\/classy\/templates\/field\/image-formatter.html.twig' --><\/div>\n          <\/div>\n\n<!-- END OUTPUT from 'core\/themes\/classy\/templates\/field\/field.html.twig' -->\n\n\n  <\/article><!-- END OUTPUT from 'core\/themes\/classy\/templates\/content\/media.html.twig' --><p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat.<\/p>\n\n<p>Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<\/p>",
+            "processed": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<\/p>\n\n\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'media' -->\n<!-- FILE NAME SUGGESTIONS:\n   * media--source-image.html.twig\n   * media--image--default.html.twig\n   * media--image.html.twig\n   * media--default.html.twig\n   x media.html.twig\n-->\n<!-- BEGIN OUTPUT from 'core\/themes\/classy\/templates\/content\/media.html.twig' -->\n<article class=\"align-center media media--type-image media--view-mode-default\"><!-- THEME DEBUG --><!-- THEME HOOK: 'field' --><!-- FILE NAME SUGGESTIONS:\n   * field--media--field-media-image--image.html.twig\n   * field--media--field-media-image.html.twig\n   * field--media--image.html.twig\n   * field--field-media-image.html.twig\n   * field--image.html.twig\n   x field.html.twig\n--><!-- BEGIN OUTPUT from 'core\/themes\/classy\/templates\/field\/field.html.twig' --><div data-quickedit-field-id=\"media\/1\/field_media_image\/en\/default\" class=\"field field--name-field-media-image field--type-image field--label-visually_hidden\">\n    <div class=\"field__label visually-hidden\">Image<\/div>\n              <div class=\"field__item\">\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image_formatter' -->\n<!-- BEGIN OUTPUT from 'core\/themes\/classy\/templates\/field\/image-formatter.html.twig' -->\n  \n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image_style' -->\n<!-- BEGIN OUTPUT from 'core\/themes\/classy\/templates\/field\/image-style.html.twig' -->\n\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image' -->\n<!-- BEGIN OUTPUT from 'core\/themes\/classy\/templates\/field\/image.html.twig' -->\n<img src=\"\/sites\/default\/files\/styles\/large\/public\/2020-02\/800x450coral.png?itok=7BeaEwBB\" width=\"480\" height=\"270\" alt=\"mmm coral\" class=\"image-style-large\" \/><!-- END OUTPUT from 'core\/themes\/classy\/templates\/field\/image.html.twig' --><!-- END OUTPUT from 'core\/themes\/classy\/templates\/field\/image-style.html.twig' --><!-- END OUTPUT from 'core\/themes\/classy\/templates\/field\/image-formatter.html.twig' --><\/div>\n          <\/div>\n\n<!-- END OUTPUT from 'core\/themes\/classy\/templates\/field\/field.html.twig' -->\n\n\n  <\/article><!-- END OUTPUT from 'core\/themes\/classy\/templates\/content\/media.html.twig' --><p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat.<\/p>\n\n<p>Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<\/p>",
             "summary": "",
             "lang": "en"
         }

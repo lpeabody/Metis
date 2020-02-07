@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.field_tags
+    - field.field.node.article.field_article_type
     - node.type.article
   module:
     - path
@@ -32,16 +32,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_tags:
-    type: entity_reference_autocomplete_tags
-    weight: 3
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+  field_article_type:
+    weight: 121
+    settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
   langcode:
     type: language_select
     weight: 2

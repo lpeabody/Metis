@@ -1,0 +1,64 @@
+uuid: acc357e2-1303-40ae-af32-8cb860d341fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_type
+    - search_api.server.database
+  module:
+    - taxonomy
+    - node
+    - search_api
+id: articles
+name: Articles
+description: ''
+read_only: false
+field_settings:
+  article_type_name:
+    label: 'Article Type Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_article_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_article_type
+      module:
+        - taxonomy
+        - taxonomy
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - article
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: database

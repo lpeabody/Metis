@@ -1,0 +1,29 @@
+uuid: 54965406-7660-48c4-9052-ef5d6c113b0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.article_type
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: articletype
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'facet_block:article_type'
+settings:
+  id: 'facet_block:article_type'
+  label: 'Article Type'
+  provider: facets
+  label_display: '0'
+  block_id: articletype
+visibility:
+  request_path:
+    id: request_path
+    pages: /articles
+    negate: false
+    context_mapping: {  }

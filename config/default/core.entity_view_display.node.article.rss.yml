@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.rss
     - field.field.node.article.body
-    - field.field.node.article.field_tags
+    - field.field.node.article.field_article_type
     - node.type.article
   module:
     - user
@@ -21,6 +21,6 @@ content:
     region: content
 hidden:
   body: true
-  field_tags: true
+  field_article_type: true
   langcode: true
   search_api_excerpt: true
