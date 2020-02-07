@@ -10,6 +10,9 @@ local.blt.yml
 .local_dbs
 docksal-local.*
 
+# Ignore documentation build folder.
+docs/build
+
 # Ignore certain sensitive files. These will be auto-generated on deployments.
 salt.txt
 

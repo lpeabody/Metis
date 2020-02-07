@@ -1,0 +1,19 @@
+uuid: 0ffa6093-c70a-42db-8b6b-587c4e78bb0c
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: Local
+description: ''
+folder: ../config/envs/local
+module:
+  devel: 0
+  stage_file_proxy: 0
+theme: {  }
+blacklist:
+  - search_api.index.acquia_search_index
+  - search_api.server.docksal
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

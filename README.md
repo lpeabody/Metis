@@ -9,6 +9,7 @@ best-practice configurations, robust testing of all features, and sample content
 - Content Authoring
     - Layout Builder
     - Media Library
+    - [Webform](https://www.drupal.org/project/webform)
 - Images
     - [ImageMagick](https://www.drupal.org/project/imagemagick)
     - [Focal Point](https://www.drupal.org/project/focal_point)
@@ -22,6 +23,7 @@ best-practice configurations, robust testing of all features, and sample content
     - [Search API Solr](https://www.drupal.org/project/search_api_solr)
     - [Faceted Search](https://www.drupal.org/project/facets)
 - SEO
+    - [Google Tag Manager](https://www.drupal.org/project/google_tag)
     - [Schema.org JSON-LD](https://www.drupal.org/project/schema_metatag)
     - [Metatag](https://www.drupal.org/project/metatag)
         - Open Graph
@@ -29,6 +31,7 @@ best-practice configurations, robust testing of all features, and sample content
     - [Sitemap XML](https://www.drupal.org/project/simple_sitemap)
     - [Robots.txt](https://www.drupal.org/project/robotstxt)
 - Caching
+    - [Purge](https://www.drupal.org/project/purge)
     - [Varnish Purging](https://www.drupal.org/project/varnish_purge)
 - REST API
     - JSON:API endpoints for all entity types and bundles
@@ -36,6 +39,17 @@ best-practice configurations, robust testing of all features, and sample content
     - Installation from configuration via profile
     - [Configuration Split](https://www.drupal.org/project/config_split)
     - [Config Ignore](https://www.drupal.org/project/config_ignore)
+- Platform Readiness
+    - Acquia
+- Development
+    - [Acquia BLT](https://docs.acquia.com/blt/)
+    - [Default Content](https://www.drupal.org/project/default_content) (for providing starter content)
+    - [Stage File Proxy](https://www.drupal.org/project/stage_file_proxy) (for retrieving missing local files from remote sites)
+- Testing
+    - Behat
+    - PHPUnit
+    - PHPCS Drupal coding standards
+    - Drupal Check for D9 readiness
 
 This project is optimized for running in a [Docksal](https://docksal.io/) environment. All project-related instructions
 assume you are running a local Docksal environment. This does not preclude the possibility of adding support for
@@ -70,7 +84,7 @@ This project is based on BLT, an open-source project template and tool that enab
 
 1. Clone the project.
 2. Run `fin init`.
-3. Run `fin uli` to generate a login link and automatically open it.
+3. Run `fin uli` to generate a login link and automatically open it in your default browser.
 
 ---
 

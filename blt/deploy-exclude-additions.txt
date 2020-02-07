@@ -1,0 +1,11 @@
+.github
+.docksal
+.local_dbs
+
+# Exclude any local ACSF sites if they've been brought down.
+docroot/sites/acsf_*
+drush/site/local-acsf.site.yml
+drush/site/remote-acsf.site.yml
+
+# Exclude documentation in artifact.
+/docs

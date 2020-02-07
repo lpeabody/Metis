@@ -7,3 +7,6 @@ services:
       - DOCKSAL=true
   varnish:
     image: docksal/varnish:1.1-varnish4
+  web:
+    environment:
+      - VIRTUAL_HOST

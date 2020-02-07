@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+## Build site documentation. Optionally pass a commit to rebuild documentation only if documentation changes are present in that commit.
+##
+## Usage: fin build-docs [-r commit]
+
+set -e
+
+# Assume we always build files.
+build_files=true
+
+# Collect options.
+while getopts ":r:" opt; do
+    case $opt in
+        r)
+            # Assume no longer building files until its proven there was a documentation change in the commit.
+            build_files=false
+            commit=$OPTARG
+            ;;
+        \?)
+            echo "Invalid option."
+            exit 1
+            ;;
+        :)
+            echo "Option -$OPTARG requires an argument."
+            exit 1
+            ;;
+    esac
+done
+
+# Strip off processed options, leaving just arguments remaining.
+shift $((OPTIND-1))
+
+if [ ! "$build_files" = true ]; then
+  echo "Checking if documentation changed in commit..."
+  changed_files=$(fin exec -T git diff-tree --no-commit-id --name-only -m $commit)
+  for file in $changed_files; do
+    case $file in
+      docs)
+        echo "Documentation changed in commit, rebuilding."
+        # Rebuild documentation if any documentation files changed in the commit.
+        build_files=true
+        ;;
+    esac
+  done
+fi
+
+if [ "$build_files" = true ]; then
+  rm -rf ${PROJECT_ROOT}/docs/build/*
+  cd ${PROJECT_ROOT}/docs && fin exec make html
+else
+  echo "Documentation did not change, skipping build."
+fi
