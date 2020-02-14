@@ -12,7 +12,7 @@
 project:
   machine_name: metis
   # Used for enforcing correct git commit msg syntax.
-  prefix: BLT
+  prefix: METIS
   human_name: 'BLTed 11'
   profile:
     name: lightning
@@ -24,6 +24,13 @@ project:
 git:
   default_branch: master
   remotes: {  }
+  # The value of a hook should be the file path to a directory containing an
+  # executable file named after the hook. Changing a hook value to 'false' will disable it.
+  # You should execute `blt blt:init:git-hooks` after modifying these values.
+  hooks:
+    commit-msg: ${repo.root}/blt/scripts/git-hooks
+    pre-commit: ${repo.root}/blt/scripts/git-hooks
+    pre-push: ${repo.root}/blt/scripts/git-hooks
 deploy:
   # When manually deploying a tag, also tag the source repository.
   tag_source: true
@@ -41,9 +48,6 @@ drush:
 
 # Disable git hooks globally.
 disable-targets:
-  blt:
-    init:
-      git-hooks: true
   drupal:
     toggle:
       modules: true
