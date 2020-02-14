@@ -5,6 +5,7 @@ services:
     image: wearegenuine/docksal-cli:gen1.1.0-cli2.10-php7.3
     environment:
       - DOCKSAL=true
+      - PHP_IDE_CONFIG=serverName=$VIRTUAL_HOST
   varnish:
     image: docksal/varnish:1.1-varnish4
   web:
