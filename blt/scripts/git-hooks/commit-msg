@@ -4,4 +4,4 @@ echo "Executing .git/hooks/commit-msg..."
 
 message=`fin exec php -r 'echo rtrim(file_get_contents("/var/www/.git/COMMIT_EDITMSG"), "\n");'`
 
-fin exec /var/www/vendor/bin/blt internal:git-hook:execute:commit-msg "$message"
+fin exec -T /var/www/vendor/bin/blt internal:git-hook:execute:commit-msg "$message" --no-interaction

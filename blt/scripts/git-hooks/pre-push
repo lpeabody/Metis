@@ -3,7 +3,7 @@
 ROOT_DIR="$(pwd)/"
 
 echo "Executing .git/hooks/pre-push..."
-fin exec /var/www/vendor/bin/blt internal:git-hook:execute:pre-push
+fin exec -T /var/www/vendor/bin/blt internal:git-hook:execute:pre-push --no-interaction
 
 # Return the status of the last run command.
 exit $?
