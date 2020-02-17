@@ -3,4 +3,10 @@
 ## Execute drush uli with specific alias.
 DRUSH_ALIAS=${1:-@self}
 
-open $(fin drush $DRUSH_ALIAS uli | tr -d '\r')
+if [[ `uname -s` == "Linux" ]]; then
+  OPEN="xdg-open"
+else
+  OPEN="open"
+fi
+
+$OPEN $(fin drush $DRUSH_ALIAS uli | tr -d '\r')

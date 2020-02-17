@@ -45,8 +45,10 @@
         "drupal/twig_tweak": "^2.4",
         "drupal/varnish_purger": "^1.11",
         "drupal/webform": "^5.8",
+        "harvesthq/chosen": "1.8.7",
         "mglaman/drupal-check": "1.0.14",
-        "mglaman/phpstan-drupal": "^0.11.1"
+        "mglaman/phpstan-drupal": "^0.11.1",
+        "oomphinc/composer-installers-extender": "^1.1"
     },
     "require-dev": {
         "acquia/blt-require-dev": "11.x-dev",
@@ -112,7 +114,8 @@
             "docroot/libraries/{$name}": [
                 "type:drupal-library",
                 "type:bower-asset",
-                "type:npm-asset"
+                "type:npm-asset",
+                "harvesthq/chosen"
             ],
             "drush/Commands/{$name}": [
                 "type:drupal-drush"
@@ -120,7 +123,8 @@
         },
         "installer-types": [
             "bower-asset",
-            "npm-asset"
+            "npm-asset",
+            "library"
         ],
         "patchLevel": {
             "drupal/core": "-p2"
