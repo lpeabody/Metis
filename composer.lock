@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d417927335fe3bf08e270e52442df43a",
+    "content-hash": "36ee678afb3d5ab947a3ef898d452c10",
     "packages": [
         {
             "name": "acquia/blt",
@@ -224,12 +224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "169a9916559764dfd2b8f7b21acadf0ae05c4c32"
+                "reference": "65cbc9b79b502009b0df13187b941938e8ec7632"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/169a9916559764dfd2b8f7b21acadf0ae05c4c32",
-                "reference": "169a9916559764dfd2b8f7b21acadf0ae05c4c32",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/65cbc9b79b502009b0df13187b941938e8ec7632",
+                "reference": "65cbc9b79b502009b0df13187b941938e8ec7632",
                 "shasum": ""
             },
             "require": {
@@ -244,13 +244,9 @@
                 "ext-dom": "*"
             },
             "require-dev": {
-                "drupal-composer/drupal-scaffold": "^2.0.0",
+                "drupal/core-composer-scaffold": "*",
                 "drupal/core-dev": "*",
-                "drupal/drupal-extension": "^3.4",
-                "drupal/facets": "^1.2",
-                "drupal/media_entity_generic": "1.x-dev",
-                "drupal/schema_metatag": "^1.3",
-                "drush/drush": "^9.7",
+                "drush/drush": ">=9.7",
                 "oomphinc/composer-installers-extender": "^1.1",
                 "vijaycs85/drupal-quality-checker": "^1.2",
                 "weitzman/drupal-test-traits": "^1.3"
@@ -260,6 +256,24 @@
             ],
             "type": "drupal-profile",
             "extra": {
+                "drupal-scaffold": {
+                    "locations": {
+                        "web-root": "docroot/"
+                    },
+                    "file-mapping": {
+                        "[project-root]/.gitattributes": false,
+                        "[project-root]/.editorconfig": false,
+                        "[web-root]/example.gitignore": false,
+                        "[web-root]/.csslintrc": false,
+                        "[web-root]/modules/README.txt": false,
+                        "[web-root]/profiles/README.txt": false,
+                        "[web-root]/sites/README.txt": false,
+                        "[web-root]/themes/README.txt": false,
+                        "[web-root]/INSTALL.txt": false,
+                        "[web-root]/robots.txt": false,
+                        "[web-root]/web.config": false
+                    }
+                },
                 "enable-patching": true,
                 "installer-paths": {
                     "docroot/core": [
@@ -317,7 +331,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2020-02-27T20:07:58+00:00"
+            "time": "2020-03-18T14:30:45+00:00"
         },
         {
             "name": "acquia/memcache-settings",
@@ -487,16 +501,16 @@
         },
         {
             "name": "behat/gherkin",
-            "version": "v4.6.1",
+            "version": "v4.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "25bdcaf37898b4a939fa3031d5d753ced97e4759"
+                "reference": "51ac4500c4dc30cbaaabcd2f25694299df666a31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/25bdcaf37898b4a939fa3031d5d753ced97e4759",
-                "reference": "25bdcaf37898b4a939fa3031d5d753ced97e4759",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/51ac4500c4dc30cbaaabcd2f25694299df666a31",
+                "reference": "51ac4500c4dc30cbaaabcd2f25694299df666a31",
                 "shasum": ""
             },
             "require": {
@@ -542,42 +556,39 @@
                 "gherkin",
                 "parser"
             ],
-            "time": "2020-02-27T11:29:57+00:00"
+            "time": "2020-03-17T14:03:26+00:00"
         },
         {
             "name": "behat/mink",
-            "version": "v1.8.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/Mink.git",
-                "reference": "e1772aabb6b654464264a6cc72158c8b3409d8bc"
+                "reference": "e6930b9c74693dff7f4e58577e1b1743399f3ff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/Mink/zipball/e1772aabb6b654464264a6cc72158c8b3409d8bc",
-                "reference": "e1772aabb6b654464264a6cc72158c8b3409d8bc",
+                "url": "https://api.github.com/repos/minkphp/Mink/zipball/e6930b9c74693dff7f4e58577e1b1743399f3ff9",
+                "reference": "e6930b9c74693dff7f4e58577e1b1743399f3ff9",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.1",
-                "symfony/css-selector": "^2.7|^3.0|^4.0|^5.0"
+                "symfony/css-selector": "~2.1|~3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20",
-                "symfony/debug": "^2.7|^3.0|^4.0",
-                "symfony/phpunit-bridge": "^3.4.38 || ^5.0.5"
+                "symfony/phpunit-bridge": "~2.7|~3.0"
             },
             "suggest": {
                 "behat/mink-browserkit-driver": "extremely fast headless driver for Symfony\\Kernel-based apps (Sf2, Silex)",
                 "behat/mink-goutte-driver": "fast headless driver for any app without JS emulation",
                 "behat/mink-selenium2-driver": "slow, but JS-enabled driver for any app (requires Selenium2)",
-                "behat/mink-zombie-driver": "fast and JS-enabled headless driver for any app (requires node.js)",
-                "dmore/chrome-mink-driver": "fast and JS-enabled driver for any app (requires chromium or google chrome)"
+                "behat/mink-zombie-driver": "fast and JS-enabled headless driver for any app (requires node.js)"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -603,7 +614,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2020-03-11T15:26:34+00:00"
+            "time": "2016-03-05T08:26:18+00:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -920,7 +931,7 @@
             "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "dist": {
@@ -3598,17 +3609,17 @@
         },
         {
             "name": "drupal/cog",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/cog.git",
-                "reference": "8.x-1.14"
+                "reference": "8.x-1.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/cog-8.x-1.14.zip",
-                "reference": "8.x-1.14",
-                "shasum": "580e73e9af3e706dc0aeff59a2736e660e9d2cd1"
+                "url": "https://ftp.drupal.org/files/projects/cog-8.x-1.15.zip",
+                "reference": "8.x-1.15",
+                "shasum": "4b416ce2957438cbe42e8597fccaf7d208a90534"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -3619,8 +3630,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.14",
-                    "datestamp": "1584381678",
+                    "version": "8.x-1.15",
+                    "datestamp": "1584454088",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9939,23 +9950,23 @@
         },
         {
             "name": "drupal/video_embed_field",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/video_embed_field.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "1e76eeefb27f4166d3d119e8c27469bbf12c0f06"
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "d9b4b3bde48edf49d1aa038aae6736496558caf4"
             },
             "require": {
-                "drupal/core": "^8.7.0"
+                "drupal/core": "^8.8 || ^9"
             },
             "require-dev": {
-                "drupal/colorbox": "*",
+                "drupal/colorbox": "^1.0",
                 "drupal/media_entity": "*",
                 "drupal/media_entity_embeddable_video": "*",
                 "drupal/video_embed_media": "*"
@@ -9966,8 +9977,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1564103585",
+                    "version": "8.x-2.3",
+                    "datestamp": "1584489966",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10000,20 +10011,20 @@
         },
         {
             "name": "drupal/views_infinite_scroll",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_infinite_scroll.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_infinite_scroll-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "614a2b01d57e2a75255883294bfd6b9246c85efd"
+                "url": "https://ftp.drupal.org/files/projects/views_infinite_scroll-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "42ff1b7c835a2cb0755425999bb8251f19c62fac"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -10021,8 +10032,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1561996386",
+                    "version": "8.x-1.7",
+                    "datestamp": "1584489857",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14107,25 +14118,25 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.4.5",
+            "version": "v3.4.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "d0a6dd288fa8848dcc3d1f58b94de6a7cc5d2d22"
+                "reference": "ee9b946e7223b11257329a054c64396b19d619e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/d0a6dd288fa8848dcc3d1f58b94de6a7cc5d2d22",
-                "reference": "d0a6dd288fa8848dcc3d1f58b94de6a7cc5d2d22",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/ee9b946e7223b11257329a054c64396b19d619e1",
+                "reference": "ee9b946e7223b11257329a054c64396b19d619e1",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": "^5.5.9|>=7.0.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.4-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -14156,7 +14167,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2020-02-04T09:01:01+00:00"
+            "time": "2020-02-04T08:04:52+00:00"
         },
         {
             "name": "symfony/debug",

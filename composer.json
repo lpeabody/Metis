@@ -53,6 +53,7 @@
     },
     "require-dev": {
         "acquia/blt-require-dev": "11.x-dev",
+        "behat/mink": "~1.7.1",
         "drupal/devel": "^2.1",
         "drupal/qa_accounts": "^1.0@alpha",
         "drupal/stage_file_proxy": "^1.0",
