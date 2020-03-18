@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+## Update all Composer packages and update Drupal configuration.
+##
+## Usage: fin platform-update
+
+set -e
+
+fin exec /var/www/.docksal/scripts/platform-update.sh
