@@ -15,4 +15,4 @@ printf -v date '%(%Y-%m-%d--%Hh-%Mm-%Ss)T' -1
 git checkout -b update/composer-update-$date
 git add .
 git commit -m "METIS-000: Composer and platform updates performed on $date." --no-verify
-git push -u origin update/composer-update-$date
+git push -u origin update/composer-update-$date --no-verify
