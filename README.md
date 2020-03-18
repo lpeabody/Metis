@@ -1,6 +1,6 @@
 # Metis
 
-[![Build Status](https://travis-ci.com/lpeabody/Metis.svg?branch=master)](https://travis-ci.com/lpeabody/Metis)
+[![Build Status](https://travis-ci.com/lpeabody/Metis.svg?branch=develop)](https://travis-ci.com/lpeabody/Metis)
 
 [Metis](https://en.wikipedia.org/wiki/Metis_%28mythology%29) is a starter Drupal project meant to speed up
 time-to-delivery by removing a lot of repetitive work that gets done time and time again. It is meant to provide
