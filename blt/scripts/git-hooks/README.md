@@ -9,7 +9,8 @@ These hooks should be used on all projects, as they will save developers time. I
 
 ## Provided Hooks
 
-Two default hooks are provided:
+Three default hooks are provided:
 
 * _commit-msg_ - This validates the syntax of a git commit message before it is committed locally.
 * _pre-commit_ - This runs Drupal Code Sniffer on committed code before it is committed locally.
+* _pre-push_ - This runs Drupal Code Sniffer on committed code before it is push to the remote repository.
