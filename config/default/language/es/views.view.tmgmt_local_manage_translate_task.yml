@@ -182,7 +182,6 @@ display:
           action_title: 'Con selección'
         status:
           label: Estado
-          format_plural_string: !!binary MQNAY291bnQ=
         tuid:
           label: Cesionario
           separator: ', '
@@ -226,7 +225,6 @@ display:
           action_title: 'Con selección'
         status:
           label: Estado
-          format_plural_string: !!binary MQNAY291bnQ=
         progress:
           label: Progreso
         created:
@@ -270,7 +268,6 @@ display:
           action_title: 'Con selección'
         status:
           label: Estado
-          format_plural_string: !!binary MQNAY291bnQ=
         title:
           label: Título
           separator: ', '

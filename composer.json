@@ -12,6 +12,7 @@
         "acquia/memcache-settings": "*",
         "drupal/acquia_connector": "^1.5.0",
         "drupal/acquia_purge": "^1.0-beta3",
+        "drupal/address": "^1.8",
         "drupal/admin_toolbar": "^2.0",
         "drupal/allowed_formats": "^1.2",
         "drupal/better_normalizers": "^1.0@beta",

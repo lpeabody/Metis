@@ -81,7 +81,6 @@ display:
           label: 'Registrando módulo'
         count:
           label: 'Conteo de usos'
-          format_plural_string: !!binary MQNAY291bnQ=
       title: 'Usos del archivo'
       arguments:
         fid:

@@ -45,7 +45,6 @@ display:
           action_title: 'Con selección'
         status:
           label: Estado
-          format_plural_string: !!binary MQNAY291bnQ=
         progress:
           label: Progreso
         title:
@@ -83,7 +82,6 @@ display:
           action_title: 'Con selección'
         status:
           label: Estado
-          format_plural_string: !!binary MQNAY291bnQ=
         progress:
           label: Progreso
         title:
@@ -121,7 +119,6 @@ display:
           action_title: 'Con selección'
         status:
           label: Estado
-          format_plural_string: !!binary MQNAY291bnQ=
         title:
           label: Etiqueta
           separator: ', '
@@ -228,7 +225,6 @@ display:
           action_title: 'Con selección'
         status:
           label: Estado
-          format_plural_string: !!binary MQNAY291bnQ=
         progress:
           label: Progreso
         title:
@@ -266,7 +262,6 @@ display:
           action_title: 'Con selección'
         status:
           label: Estado
-          format_plural_string: !!binary MQNAY291bnQ=
         title:
           label: Etiqueta
           separator: ', '
