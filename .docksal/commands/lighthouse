@@ -1,0 +1,3 @@
+#!/bin/bash
+
+fin docker run --rm --name lighthouse --dns ${DOCKSAL_DNS1} --dns ${DOCKSAL_DNS2} -it -v ${PROJECT_ROOT}/lighthouse-reports:/home/chrome/reports femtopixel/google-lighthouse "http://${VIRTUAL_HOST}" "$@"

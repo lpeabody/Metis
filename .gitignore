@@ -146,3 +146,6 @@ drush/sites/.checksums
 
 # Deprecation detector rules
 .rules
+
+# Ignore Google lighthouse reports.
+lighthouse-reports/
