@@ -9,4 +9,4 @@ else
   OPEN="open"
 fi
 
-$OPEN $(fin drush $DRUSH_ALIAS uli | tr -d '\r')
+$OPEN "$(fin drush $DRUSH_ALIAS uli | tr -d '\r')"

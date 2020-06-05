@@ -52,6 +52,8 @@ disable-targets:
     toggle:
       modules: true
 
+behat:
+  tags: '~ajax&&~experimental&&~lightningextension&&~seo'
 # Behat
 tests:
   chrome:
