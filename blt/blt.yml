@@ -13,16 +13,16 @@ project:
   machine_name: metis
   # Used for enforcing correct git commit msg syntax.
   prefix: METIS
-  human_name: 'BLTed 11'
+  human_name: 'Metis'
   profile:
-    name: lightning
+    name: metis
   # This will be used as the local uri for all developers.
   local:
     protocol: http
-    hostname: 'local.${project.machine_name}.com'
+    hostname: '${project.machine_name}.docksal'
 # Configuration settings for new git repository.
 git:
-  default_branch: master
+  default_branch: develop
   remotes: {  }
   # The value of a hook should be the file path to a directory containing an
   # executable file named after the hook. Changing a hook value to 'false' will disable it.
